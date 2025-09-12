@@ -32,10 +32,10 @@ ARM Cortex-M microcontrollers are popular for embedded systems because:
 ---
 
 ## Extra points
-1)ARM releases Technical Reference Manual(TRM) as documentation of processor they use.
-2)Every processor in ARM is created with processor core and specific peripherals surrounding it.
-  Peripherals include NVIC,MPU,AHB,ITM,Bus Matrix,etc.
-3)Processor interacts with outer world with three bus interfaces which include ICode,DCode and System Bus.
+1)ARM releases Technical Reference Manual(TRM) as documentation of processor they use.  
+2)Every processor in ARM is created with processor core and specific peripherals surrounding it.  
+  Peripherals include NVIC,MPU,AHB,ITM,Bus Matrix,etc.  
+3)Processor interacts with outer world with three bus interfaces which include ICode,DCode and System Bus.  
 4)To get information related to specific microcontroller,pin configuration,initiallisations,power requirements,etc it is 
 recommended to check their datasheet and refernece manual.
 
@@ -43,10 +43,11 @@ recommended to check their datasheet and refernece manual.
 
 ## IDE
 IDE stands for Integrated Development Environment that contains all essential tools to develop,compile,
-link and debugthe code.For STM32,STM32CubeIDE is being used.It is eclipse based IDE with STM32 related customization.
+link and debug the code.  
+For STM32,STM32CubeIDE is being used.It is eclipse based IDE with STM32 related customization.
 We can download this IDE through the official website of STM32.
 
 ---
 
-Now that you understand the basics, in the next lesson we’ll dive into STM32 hardware overview and get ready to create our first Hello World project.
+Now that you have understood the basics, in the next lesson we’ll dive into STM32 hardware overview and get ready to create our first Hello World project.
 
