@@ -2,6 +2,7 @@
 
 STM32 is a family of 32-bit ARM Cortex-M microcontrollers which is developed by STMicroelectronics.
 They are widely used in industry, research, and even projects because of their performance, low power consumption, and rich peripherals.
+Ensure you have downloaded the IDE before you proceed for first project.
 
 ---
 
@@ -37,4 +38,15 @@ Support IDE STM32CubeIDE
 
 ---
 
-## IDE
+## First Hello World Project
+1)Start first by launching the STM32CubeIDE and then create a workspace where you will keep the project.  
+2)Then go to new project as shown on the screen which will leads to target selector page.  
+3)As we are using standard board go for board selector option at top and select the board STM32F4Discovery(whatever you have).  
+4)Click next which will ask you to give project name.Name it helloworld and choose project type as empty.(STM32Cube used if want to work on peripherals of board).  
+5)This will open your project folder.Here you will see inc(used for header files) and src(source file) folders.
+6)After this write the code in main.c file and run it.To run it right click on project name and choose build project option.This will run the code.
+7)There is also debugger present to look for errors in code.
+
+---
+
+## 
