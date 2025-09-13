@@ -61,7 +61,8 @@ while (1)
 {
     HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_12);
     HAL_Delay(500);
-}  
+}
+```
 7)This will toggle the LED pin 12 with a delay of 500ms.After that build project and you will see the LED blinking!.
 
 
