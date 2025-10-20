@@ -6,6 +6,7 @@ Beginner-friendly open-source guide for learning STM32 microcontrollers.
 - [Lesson 1: Introduction](lesson1_intro/README.md)
 - [Lesson 2: Hello_World](lesson2_helloworld/README.md)
 - [Lesson 3: Debug_Terms](lesson3_Terms/README.md)
+- [Lesson 4: Features](lesson4_Features/README.md)
 
 ## License
 MIT License – free to use and share.
