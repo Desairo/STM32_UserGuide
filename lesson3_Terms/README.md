@@ -1,20 +1,20 @@
-# Lesson 3: Important Terminologies
+# Lesson 3: Important Terminologies for Debugging
 
-Some features in STM32 are designed to make development easier 
-and more efficient. They combine hardware and software to provide a 
-way to observe, interact with, and optimize the system in real time.
+STM32 offers several features that help developers monitor and interact with the system while it is running. 
+These tools combine hardware and software capabilities to make debugging, tracing, and system optimization
+easier and more efficient in real time.
 
 ---
 
 ## Trace
-1)Refers to the process of monitoring and recording real time execution of 
+1)Refers to the process of monitoring and recording real time execution  
 running on the microcontroller.  
 2)It allows developers to observe behavior of a code without stopping or altering
 its execution.  
 3)tracing can log specific events,such as when an interrupt is triggured or when a 
 certain function is called.
 
-## SWV(Serila Wire Viewer)
+## SWV(Serial Wire Viewer)
 1)SWV allows to trace data in real time when microcontroller is running.  
 2)It is used to track exceptions,interrupts,function calls,etc.  
 3)SWV uses SWO pin to output trace data.  
