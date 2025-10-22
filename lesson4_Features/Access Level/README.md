@@ -1,6 +1,6 @@
 ## Reset sequence of cortex processor 
-1)Then processor first reads value at location 0x0000_0000 in to MSP(Main Stack Pointer).This is intialisation of stack pointer. 
-2)After that processor reads value at location 0x0000_0004 in to PC.This value is address of reset handler. 
+1)Then processor first reads value at location 0x0000_0000 in to MSP(Main Stack Pointer).This is intialisation of stack pointer.  
+2)After that processor reads value at location 0x0000_0004 in to PC.This value is address of reset handler.  
 3)PC jumps to reset handler which is function that carry out any initialisation required and then call main function.
 
 ---
