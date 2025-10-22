@@ -23,8 +23,8 @@ Processor communicate with flash through D-Bus and I-Bus.All D-Bus,I-Bus,S-Bus a
 ## Bus Matrix
 Bus matrix is the on-chip interconnect fabric that connects bus masters to bus slaves.Processor access can be given and taken care by the 
 arbiter.To access different slaves multiple masters are present.  
-1)Bus Master:-
+1)Bus Master:-  
 a)This includes processor,DMA,USB,etc.  
 b)Bus master is the one who take control over the bus and initiate communication with other devices connected to bus.It is responsible for starting and 
-managing data transfer.
-
+managing data transfer.  
+c)Arbitration mechanism is needed to decide which master can control the bus at any given time,preventing conflicts between so many masters.
