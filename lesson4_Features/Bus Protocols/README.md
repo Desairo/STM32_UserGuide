@@ -30,7 +30,7 @@ b)Bus master is the one who take control over the bus and initiate communication
 managing data transfer.  
 c)Arbitration mechanism is needed to decide which master can control the bus at any given time,preventing conflicts between so many masters.  
 
-2)Bus Slave:-
+2)Bus Slave:-  
 a)This includes memory blocks (Flash, SRAM) and peripherals (GPIO, UART, SPI, ADC, Timers, etc.) that are connected to the bus.  
 b)A bus slave does not initiate communication.It only responds to requests made by a bus master.  
 c)The bus matrix ensures that only one master at a time can access a given slave to avoid data corruption.  
