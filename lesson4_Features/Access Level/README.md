@@ -5,7 +5,7 @@
 
 ---
 
-## Access level of teh processor 
+## Access level of the processor 
 1)It's restricted to go from an unprivileged access mode to privileged or handler mode.This is because security risks 
 are produced here by this task.Also unprivileged codes are usually application code that shouldn't have ability to control 
 system level operations.  
