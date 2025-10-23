@@ -30,4 +30,26 @@ from kernel so it uses SVC with service number.
 ---
 
 ## System Exception control Register
+1)All the registers which control the functionality of processor.It contains registers for NVIC,FPU,MPU,etc.  
+2)SCB(System Control Block) provides system implementation information and system control.Which includes fault handlers enabler,pending status of faults
+control sleep and sleep wakeup.  
+3)System handler priority register useful in handling priorities in system exceptions.  
+4)SHCSR(System Handler Control and State Register) enables system handler to enable pending status of BusFault,MemManage fault.
 
+---
+
+## NVIC
+1)One of the peripheral of the cortex processor.It is used to configure 240 interrupts.  
+2)It enable,disable or pend various interrupts and read status of active interrupts.  
+3)Configure priority and priority grouping of various interrupts.It's called nested because it supports pre-empting 
+a lower priority interrupt handler when higher priority interrupt arrives.  
+4)This interrupts are triggered by various on-chip peripherals.This are highly vendor specific.
+
+---
+
+## Important Registers
+ISER=Interrupt Set Enable Register.This are 8 registers.This are only used for enabling interrupts.It can't disable interrupts.  
+ICER=Interrupt Clear Enable Register.Used to disable interrupts.  
+ISPR=Interrupt Set Pending Register.It basically pend the register.  
+ICPR=Interrupt Clear Pending Register.It removes pending state.  
+IABR=Interrupt Active Bit Register.It tells whether interrupt is being serviced by processor or not.
