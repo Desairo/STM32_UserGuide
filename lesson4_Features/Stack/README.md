@@ -6,6 +6,7 @@
 ---
 
 <img width="807" height="277" alt="image" src="https://github.com/user-attachments/assets/14262631-f20b-4c9e-8742-86a417515359" />  
+
 1)SRAM is of 128KB where RAM starts at left end and end at right side.  
 2)Global data region is utilized when program contains global data and static load variables.  
 3)Heap memory will be used for dynamic memory allocation.  
