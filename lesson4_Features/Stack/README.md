@@ -5,7 +5,7 @@
 
 ---
 
-<img width="807" height="277" alt="image" src="https://github.com/user-attachments/assets/14262631-f20b-4c9e-8742-86a417515359" />
+<img width="807" height="277" alt="image" src="https://github.com/user-attachments/assets/14262631-f20b-4c9e-8742-86a417515359" />  
 1)SRAM is of 128KB where RAM starts at left end and end at right side.  
 2)Global data region is utilized when program contains global data and static load variables.  
 3)Heap memory will be used for dynamic memory allocation.  
@@ -35,6 +35,15 @@ Stack Placement:-
 
 ---
 
+## Banked Stack Pointer
+1)SP   2)MSP  3)PSP(Process Stack Pointer)   
+SP is current stack pointer.After processor reset by default MSP will be selected as current SP and MSP data will be copied to SP.
+Thread mode data change current stack pointer to PSP by configuring control registers SPSEL(Stack Pointer Select) bit.  
+1)SPSEL defines currently active stack pointer.In handler mode it is 0.When SPSEL is 0 current SP is MSP else SP is PSP.  
+2)MSP will be initialised automatically by the processor after reset by reading content at address 0x0000_0000.  
+3)Vector table is data structure that contains address of interrput service routine(ISR).It serves as lookup table that directs processor 
+to correct handler when an interrupt occurs.  
+4)PSP mostly used for user tasks.In thread mode we can change between MSP and PSP.
 
 
 
