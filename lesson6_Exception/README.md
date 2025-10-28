@@ -62,3 +62,37 @@ Causes:-
 
 ---
 
+## MemManage Fault Exception
+1)Configurable fault exception disabled by default.  
+2)Can enable this exception by configuring processor register "System Handler Control and State Register".
+3)Priority also configurable.  
+
+Causes:-
+1)Detected when memory access violation detected.Unprivileged thread mode code tries to access memory region which is privileged access only.  
+2)Writing to memory which is read only.It is triggered only when we execute code from peripheral memory region.Peripheral memory region are execute never region.  
+Execute Never regions:-  
+Peripheral,Externel RAM,Externel device,PPB,etc.
+
+---
+
+## Bus Fault
+Causes:-  
+1)Due to error response returned by processor bus interfaces during access to memory devices during fetch and data read/write.  
+2)If bus error happens during vector fetch it will be escalated to hard fault even if bus fault exception is enabled.  
+3)Memory device sends error response when processor bus interface tries to access invalid or restricted memory locations which could generate bus fault.  
+4)Whne device is not ready to accept memory transfer.  
+5)Encountered with this when play with external memories such as SDRAM connected via DRAM controllers.  
+6)Unprivileged access to PPB.
+
+---
+
+## Usage Fault
+Causes:-  
+1)Execution of undefined instructions.For example ARM ISA not supported and if executed.  
+2)Without FPU execute floating instruction and if we kept T bit 0.  
+3)Return to thread mode when still executing exception.  
+4)Unaligned memory access with multiple load and store instructions.  
+5)Divided by zero and unaligned data access from memory.
+
+---
+
