@@ -30,5 +30,7 @@
 ---
 
 ## Systick control and status register
-
+1)Bit 0 when set it will enable the counter.  
+2)Bit 1 handles systick exception request.  
+3)Bit 2 intiates the clock source.
 
