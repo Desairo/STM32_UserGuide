@@ -11,6 +11,9 @@ Beginner-friendly open-source guide for learning STM32 microcontrollers.
 - [Lesson 6: Exception](lesson6_Exception/README.md)
 - [Lesson 7: SVC](lesson7_SVC/README.md)
 - [Lesson 8: PendSV](lesson8_PendSV/README.md)
+- [Lesson 9: Scheduler](lesson9_Scheduler/README.md)
+- [Lesson 10: Executables](lesson8_Executables/README.md)
+- [Lesson 11: Startup_File](lesson8_StartupFile/README.md)
 
 ## License
 MIT License – free to use and share.
