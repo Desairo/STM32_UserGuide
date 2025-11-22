@@ -1,6 +1,6 @@
 # STM32_UserGuide 📘
 
-Beginner-friendly open-source guide for learning STM32 microcontrollers.
+<p align="center"> <img src="https://img.shields.io/badge/STM32-UserGuide-blue?style=for-the-badge"> <img src="https://img.shields.io/badge/Level-Beginner-green?style=for-the-badge"> <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge"> </p> <p align="center"> A beginner-friendly open-source guide for learning STM32 microcontrollers step-by-step. </p>
 
 ## Lessons
 - [Lesson 1: Introduction](lesson1_intro/README.md)
