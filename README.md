@@ -2,18 +2,56 @@
 
 <p align="center"> <img src="https://img.shields.io/badge/STM32-UserGuide-blue?style=for-the-badge"> <img src="https://img.shields.io/badge/Level-Beginner-green?style=for-the-badge"> <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge"> </p> <p align="center"> A beginner-friendly open-source guide for learning STM32 microcontrollers step-by-step. </p>
 
-## Lessons
-- [Lesson 1: Introduction](lesson1_intro/README.md)
-- [Lesson 2: Hello_World](lesson2_helloworld/README.md)
-- [Lesson 3: Debug_Terms](lesson3_Terms/README.md)
-- [Lesson 4: Features](lesson4_Features/)
-- [Lesson 5: Peripheral](lesson5_Peripheral/README.md)
-- [Lesson 6: Exception](lesson6_Exception/README.md)
-- [Lesson 7: SVC](lesson7_SVC/README.md)
-- [Lesson 8: PendSV](lesson8_PendSV/README.md)
-- [Lesson 9: Scheduler](lesson9_Scheduler/README.md)
-- [Lesson 10: Executables](lesson10_Executables/README.md)
-- [Lesson 11: Startup_File](lesson11_StartupFile/README.md)
 
-## License
+## 📚 Lessons Overview
+🧭  [Lesson 1: Introduction](lesson1_intro/README.md)
+
+Get familiar with STM32 microcontrollers, families, and development workflow.
+
+💡 [Lesson 2: Hello_World](lesson2_helloworld/README.md)
+
+Write your first LED blink program using STM32CubeIDE.
+
+🐞 [Lesson 3: Debug_Terms](lesson3_Terms/README.md)
+
+Understand debugging terms like breakpoints, watch variables, stepping, etc.
+
+⚙️ [Lesson 4: Features](lesson4_Features/)
+
+Overview of core features of STM32 MCUs — HAL, LL, clock system, memory map.
+
+🔌 [Lesson 5: Peripheral](lesson5_Peripheral/README.md)
+
+Learn how peripherals work (GPIO, UART, ADC, TIMERS) and how to configure them.
+
+⚠️ [Lesson 6: Exception](lesson6_Exception/README.md)
+Deep dive into exceptions, fault handlers, and vector tables.
+
+🛠️ [Lesson 7: SVC](lesson7_SVC/README.md)
+
+Learn what Supervisor Calls are and how they are used inside firmware.
+
+🔁 [Lesson 8: PendSV](lesson8_PendSV/README.md)
+
+Understand PendSV, context switching, and RTOS relevance.
+
+🗓️ [Lesson 9: Scheduler](lesson9_Scheduler/README.md)
+
+Learn how scheduling works — cooperative, preemptive, and bare-metal scheduling.
+
+📦 [Lesson 10: Executables](lesson10_Executables/README.md)
+
+How firmware is compiled, linked, and converted into .hex/.bin files.
+
+🧵 [Lesson 11: Startup_File](lesson11_StartupFile/README.md)
+
+Understand the startup file, reset handler, and low-level MCU initialization.
+
+## 🤝 Contributing
+
+Pull requests and improvements are welcome!
+Feel free to open issues, fix typos, or add new lessons.
+
+
+## 📄 License
 MIT License – free to use and share.
