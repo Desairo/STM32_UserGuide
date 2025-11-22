@@ -43,3 +43,15 @@ affecting other bits in word.
 
 alias_address=alias_base+(32*(bit_band_memory_address-bit_band_base))+bit*4  
 bit_band_memory_address=memory address of which bit we are going to change.
+
+---
+
+## Bus Interfaces
+Processor and peripheral talk via bus interfaces.  
+It has 3 bus interfaces:-  
+1)I-Bus(Instruction fetched from flash).  
+2)D-Bus(To access data).  
+3)S-Bus(System level operations are performed).  
+
+Constant data stored in flash whereas variables are stored in SRAM.  
+
