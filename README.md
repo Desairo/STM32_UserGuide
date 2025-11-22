@@ -1,6 +1,6 @@
 # STM32_UserGuide 📘
 
-<p align="center"> <img src="https://img.shields.io/badge/STM32-UserGuide-blue?style=for-the-badge"> <img src="https://img.shields.io/badge/Level-Beginner-green?style=for-the-badge"> <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge"> </p> <p align="center"> A beginner-friendly open-source guide for learning STM32 microcontrollers step-by-step. </p>
+<p align="center"> <img src="https://img.shields.io/badge/STM32-UserGuide-blue"> <img src="https://img.shields.io/badge/Level-Beginner-green?style=for-the-badge"> <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge"> </p> <p align="center"> A beginner-friendly open-source guide for learning STM32 microcontrollers step-by-step. </p>
 
 
 ## 📚 Lessons Overview
