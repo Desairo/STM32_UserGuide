@@ -1,19 +1,19 @@
-# Lesson 1: Introduction to Embedded Systems
+# 🌟 Lesson 1: Introduction to Embedded Systems
 
-Embedded systems are specialized computer systems designed to perform a specific task.  
-They are a combination of **hardware + software**, created for a dedicated function.  
-Examples: washing machines, drones, and smartwatches.
-
----
-
-## 🧠 Embedded Processor – The Brain of the System
-
-An embedded processor consists of a control unit and an execution unit.  
-It can be a **microcontroller** or a **microprocessor**, depending on the complexity of the system.
+Embedded systems are **specialized computer systems** designed to perform a specific task.  
+They are a powerful combination of **hardware + software** created for a dedicated function.  
+**Examples:** washing machines, drones, and smartwatches.
 
 ---
 
-## Microcontroller vs Microprocessor
+## 🧠 Embedded Processor – The Brain of Everything
+
+The embedded processor is the **core of the system**, consisting of a control unit and an execution unit.  
+Depending on system complexity, the embedded processor can be either a **microcontroller** or a **microprocessor**.
+
+---
+
+## 🔍 Microcontroller vs Microprocessor
 
 | Feature       | Microcontroller            | Microprocessor            |
 |---------------|----------------------------|---------------------------|
@@ -24,33 +24,37 @@ It can be a **microcontroller** or a **microprocessor**, depending on the comple
 
 ---
 
-## Why ARM Cortex?
+## 🚀 Why ARM Cortex?
 
-ARM Cortex-M microcontrollers are popular for embedded systems because:  
+ARM Cortex-M microcontrollers are widely used in embedded systems because:
+
 - Low power consumption  
-- Uses THUMB instruction set that gives better code density  
+- THUMB instruction set for better code density  
 - Rich peripheral set (UART, SPI, I2C, ADC, Timers)  
-- Widely supported by tools  
+- Strong tool support and a large global ecosystem  
 
 ---
 
-## Extra Points
+## 📘 Extra Points
 
-1) ARM releases the Technical Reference Manual (TRM) as documentation of the processor they use.  
-2) Every processor in ARM is created with the processor core and specific peripherals surrounding it.  
-   Peripherals include NVIC, MPU, AHB, ITM, Bus Matrix, etc.  
-3) The processor interacts with the outer world through three bus interfaces: **ICode, DCode, and System Bus**.  
-4) To get information related to a specific microcontroller—pin configuration, initializations, power requirements, etc.—it is recommended to check the **datasheet** and **reference manual**.
+1) ARM releases the **Technical Reference Manual (TRM)** as documentation of the processor they use.  
+2) Every ARM processor is built with a **processor core** surrounded by specific peripherals such as  
+   NVIC, MPU, AHB, ITM, Bus Matrix, etc.  
+3) The processor communicates with the outer world using **three bus interfaces**:  
+   **ICode**, **DCode**, and **System Bus**.  
+4) For microcontroller-specific details — pin configuration, initializations, power requirements, etc. —  
+   always refer to the **datasheet** and **reference manual**.
 
 ---
 
-## IDE
+## 🛠 IDE
 
-IDE stands for **Integrated Development Environment**, which contains essential tools to develop, compile,  
+IDE stands for **Integrated Development Environment**, which includes all essential tools to develop, compile,  
 link, and debug the code.  
-For STM32, **STM32CubeIDE** is used. It is an Eclipse-based IDE with STM32-specific customization.  
+For STM32, **STM32CubeIDE** is commonly used. It is an Eclipse-based IDE with STM32-focused customization.  
 You can download it from the official STM32 website.
 
 ---
 
-Now that you have understood the basics, in the next lesson, we will dive into the **STM32 hardware overview** and get ready to create our first **Hello World** project.
+Now that you have understood the basics, in the next lesson we’ll dive into the **STM32 hardware overview**  
+and get ready to create our first **Hello World** project.
