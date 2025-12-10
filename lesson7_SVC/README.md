@@ -1,21 +1,23 @@
-## SVC Instruction
-1)THUMB ISA instruction cause SVC exception.  
-2)In RTOS user task execute SVC instruction with associated argument to make supervisory calls to seek privileged resources from kernel mode.  
-3)When in unprivileged mode and if SVC instruction processor mode goes to privileged mode.  
-4)SVC instruction always used with number,which can be used to identify request type.  
-5)SVC handler executes right after SVC instruction.
+# 🧩 SVC (Supervisor Call) Instruction – Clear & Catchy Notes
+
+## 🚀 What is an SVC Instruction?
+1) A **THUMB ISA instruction** that triggers an **SVC exception**.  
+2) Common in **RTOS**, where user tasks execute SVC with arguments to request **privileged kernel resources**.  
+3) When executed in **unprivileged mode**, the processor switches to **privileged mode** inside the SVC handler.  
+4) Always used with a **number**, which identifies the request type.  
+5) After the SVC instruction executes, the **SVC handler runs immediately**.
 
 ---
 
-## Trigger SVC instruction
-1)Direct execution of SVC instruction with immediate value.  
-SVC #0x04  
-2)Set exception pend bit in SHCSR(uncommon method).
+## 🎯 How to Trigger an SVC Instruction
+1) **Direct execution** using an immediate value:  
+   `SVC #0x04`  
+2) **Setting the exception pend bit** in SHCSR (rarely used method).
 
 ---
 
-## How to extract SVC No
-1)SVC instruction has number embedded within it reffered to as SVC no.  
-2)In SVC handler first fetch opcode of SVC and then extract SVC no.  
-3)To get opcode we should have value of PC where user code had interrupted while triggering SVC instruction.  
-4)Value of PC where user code had interrupted is stored in satck as a part of execption entry sequence by processor.
+## 🔍 Extracting the SVC Number
+1) Every SVC instruction contains an **embedded number** known as the *SVC number*.  
+2) Inside the SVC handler, first **fetch the opcode**, then extract the SVC number.  
+3) To fetch the opcode, we need the **PC value where the program was interrupted** when SVC was triggered.  
+4) This PC value is automatically stored in the **stack frame** during exception entry by the processor.
