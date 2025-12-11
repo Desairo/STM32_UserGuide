@@ -52,7 +52,7 @@ Understand the startup file, reset handler, and low-level MCU initialization.
 ⏰ [Lesson 12: Clocks](lesson12_Clocks/README.md)  
 Learn about microcontroller clocks — HSI, HSE, PLL, system clock, peripheral clocks, and RCC management.
 
-🛠️ [Lesson 13: GPIO Registers](lesson13_GPIORegister/README.md)  
+🛠️ [Lesson 13: GPIO Registers](lesson13_GPIORegister/)  
 Explore GPIO configuration, input/output modes, pull-up/pull-down resistors, and how to control pins through registers.
 
 ---
