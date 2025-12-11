@@ -1,49 +1,48 @@
-# Clocks of Microcontroller
-Microcontroller is a digital circuitary synchronous with clock.Microcontroller needs clock to operate.  
-There are three different clock sources present:-  
-1)HSE Oscillator Clock(Crystal Oscillator which is connected externally).  
-2)HSI Oscillator Clock(RC Oscillator which is internally connected).  
-3)Main PLL Clock(Phase Locked Loop which is internal to microcontroller).  
+# ⏰ Clocks of Microcontroller  
+A microcontroller is a **digital circuitry synchronized with a clock**. It **needs a clock to operate**.  
+There are three main clock sources:  
+1) **HSE Oscillator Clock** – Crystal oscillator connected externally.  
+2) **HSI Oscillator Clock** – RC oscillator built internally.  
+3) **Main PLL Clock** – Phase-Locked Loop internal to the microcontroller.  
 
 ---
 
-## HSI Clock
-1)It is default clock.This internal clocks are not precise and stable.  
-2)HSI is an internal RC oscillator built inside the microcontroller.  
-3)Here no any external components are required and basically used for low-cost designs.  
+## 🔹 HSI Clock  
+1) Default clock. Internal clocks are **less precise and less stable**.  
+2) HSI is an **internal RC oscillator** built inside the microcontroller.  
+3) **No external components** required; ideal for **low-cost designs**.  
 
 ---
 
-## HSE Clock
-1)HSE is an external crystal oscillator or an external clock signal connected to the microcontroller pins.  
-2)Compared to HSI it is very accurate and stable but is of higher cost.  
-3)Useful in real time applications and communication-based systems.  
+## 🔹 HSE Clock  
+1) External crystal oscillator or external clock signal connected to microcontroller pins.  
+2) **Highly accurate and stable** compared to HSI, but **higher cost**.  
+3) Perfect for **real-time applications** and **communication systems**.  
 
 ---
 
-## PLL
-1)The PLL(Phase-Locked Loop) is a frequency multiplier used in STM32 microcontrollers to generate higher system clock frequencies from a lower-frequency source.  
-2)PLL can take input from HSI or HSE.  
-3)PLL typically has divider and multiplier to modify the frequencies.  
+## 🔹 PLL (Phase-Locked Loop)  
+1) PLL is a **frequency multiplier** used to generate higher system clock frequencies from a lower-frequency source.  
+2) Input can come from **HSI or HSE**.  
+3) Contains **divider and multiplier circuits** to modify frequencies as needed.  
 
 ---
 
-## System Clock
-1)This is used to derive clocks for other domain.AHB prescalor is present in circuit to divide system clock value so that it can be set upto clock value 
-useful for other domain.  
-2)HCLK stands for High-speed System Clock.It is the main clock that drives the core (CPU) and often the AHB bus in a Cortex-M microcontroller.  
-3)All peripherals connected with APB1 and APB2 are clocked with HClock.  
+## 🌐 System Clock  
+1) Derives clocks for other domains. An **AHB prescaler** divides system clock value for other domain usage.  
+2) **HCLK** (High-speed System Clock) drives the **CPU core** and often the **AHB bus** in Cortex-M microcontrollers.  
+3) Peripherals connected to **APB1 and APB2** are clocked via HCLK.  
 
 ---
 
-## Peripheral Clock Configuration
-1)Before using any peripheral, it's peripheral clock must be first enabled through its peripheral register.  
-2)By default this are disabled in order to save the power.  
-3)Peripheral clocks are managed through RCC register.RCC stands for Reset,Clock and Control.  
+## ⚡ Peripheral Clock Configuration  
+1) Before using a peripheral, its **clock must be enabled** via its peripheral register.  
+2) By default, clocks are **disabled** to save power.  
+3) Managed through **RCC register** (**Reset, Clock, and Control**).  
 
 ---
 
-## RCC
-1)RCC register allows selection and management of various clock sources,ensuring microcontroller operates with suitable clock.  
-2)It is useful to reset microcontroller.It provides prescaler options to change values dynamically.  
-3)It ensures the runtime adjustments of clock signal and also helps to achieve precise time.
+## 🛠️ RCC (Reset, Clock, Control)  
+1) RCC allows **selection and management of clock sources**, ensuring proper operation.  
+2) Can **reset the microcontroller** and provides **prescaler options** to dynamically adjust frequencies.  
+3) Enables **runtime clock adjustments** and helps achieve **precise timing**.
