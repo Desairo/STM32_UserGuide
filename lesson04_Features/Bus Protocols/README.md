@@ -58,7 +58,7 @@ Multiple masters can access different slaves simultaneously (based on arbitratio
 
 
 Formula:   
-alias_address=alias_base+(32*(bit_band_memory_address-bit_band_base))+bit*4  
+`alias_address=alias_base+(32*(bit_band_memory_address-bit_band_base))+bit*4`  
 Where:  
 `bit_band_memory_address = memory address of the bit to be modified`
 
