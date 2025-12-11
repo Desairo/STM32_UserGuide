@@ -5,39 +5,39 @@
 ---
 
 ## 📚 Lessons Overview
-🧭  [Lesson 1: Introduction](lesson1_intro/README.md)
+🧭  [Lesson 1: Introduction](lesson01_intro/README.md)
 
 Get familiar with STM32 microcontrollers, families, and development workflow.
 
-💡 [Lesson 2: Hello_World](lesson2_helloworld/README.md)
+💡 [Lesson 2: Hello_World](lesson02_helloworld/README.md)
 
 Write your first LED blink program using STM32CubeIDE.
 
-🐞 [Lesson 3: Debug_Terms](lesson3_Terms/README.md)
+🐞 [Lesson 3: Debug_Terms](lesson03_Terms/README.md)
 
 Understand debugging terms like breakpoints, watch variables, stepping, etc.
 
-⚙️ [Lesson 4: Features](lesson4_Features/)
+⚙️ [Lesson 4: Features](lesson04_Features/)
 
 Overview of core features of STM32 MCUs — HAL, LL, clock system, memory map.
 
-🔌 [Lesson 5: Peripheral](lesson5_Peripheral/README.md)
+🔌 [Lesson 5: Peripheral](lesson05_Peripheral/README.md)
 
 Learn how peripherals work (GPIO, UART, ADC, TIMERS) and how to configure them.
 
-⚠️ [Lesson 6: Exception](lesson6_Exception/README.md)
+⚠️ [Lesson 6: Exception](lesson06_Exception/README.md)
 
 Deep dive into exceptions, fault handlers, and vector tables.
 
-🛠️ [Lesson 7: SVC](lesson7_SVC/README.md)
+🛠️ [Lesson 7: SVC](lesson07_SVC/README.md)
 
 Learn what Supervisor Calls are and how they are used inside firmware.
 
-🔁 [Lesson 8: PendSV](lesson8_PendSV/README.md)
+🔁 [Lesson 8: PendSV](lesson08_PendSV/README.md)
 
 Understand PendSV, context switching, and RTOS relevance.
 
-🗓️ [Lesson 9: Scheduler](lesson9_Scheduler/README.md)
+🗓️ [Lesson 9: Scheduler](lesson09_Scheduler/README.md)
 
 Learn how scheduling works — cooperative, preemptive, and bare-metal scheduling.
 
