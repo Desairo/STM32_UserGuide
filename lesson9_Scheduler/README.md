@@ -1,36 +1,42 @@
-# Scheduler
-1)Scheduler using round robin carry out context switch operation.  
-2)Round robin scheduling method is like time slice are assigned to each task in equal portions and in circular order.  
-3)First we will use systick handler to do context switch and then will use PendSV handler.
+# 🧵 Scheduler
+
+1) A scheduler using **Round Robin** performs task switching through context switching.  
+2) In Round Robin scheduling, **equal time slices** are assigned to each task in circular order.  
+3) First, we use the **SysTick handler** to perform context switching, and later switch to the **PendSV handler**.
 
 ---
 
-## What is Task
-1)Task is nothing but piece of code or our C function doing specific job.  
-2)Task has its own stack to create its local variables when run on CPU.When scheduler decides to remove task from CPU,scheduler first saves context of tasks private task.  
-3)Task never loses its state until it is deleted permanantly.
+## 🧠 What is a Task?
+
+1) A **task** is simply a piece of code or a C function that performs a specific job.  
+2) Every task has its **own stack**, used to store local variables during execution.  
+   When the scheduler pre-empts a task, it first **saves the task’s context** on its private stack.  
+3) A task **never loses its state** unless it is deleted permanently.
 
 ---
 
-## Stack Assessment 
-1)In memory map of processor SRAM starts at 0x20000000 and its size is 128KB.  
-2)Stack in assembly is Full Descending(FD) in nature.That means stack would start from top of SRAM that is SRAM_END.  
-3)Scheduling is an algorithm which takes decision of pre-empting a running task from CPU and takes decision about which task should run on CPU next.  
-4)State of task consist of general purpose registers,some special and status registers because this are the one who stores data before pre-empting from one task.
+## 🗂️ Stack Assessment
+
+1) In the processor memory map, **SRAM starts at `0x20000000`**, with a size of **128 KB**.  
+2) The stack in ARM Cortex-M follows a **Full Descending (FD)** model, meaning it grows downward starting from **SRAM_END**.  
+3) Scheduling is the algorithm that decides **when to pre-empt a running task** and **which task should execute next**.  
+4) A task’s state consists of **general-purpose registers, special registers, and status registers**, as these store important data before a context switch.
 
 ---
 
-## Systick Reload value register
-1)Systick is a down counter.The reload value register specifies start value to load into SYST_CVR register.  
-2)Reload value stores the count value and the moment we enable timer the value gets copied to CVR register.  
-3)When this register content reach 0 again new value get reloaded in it.  
-4)Exception doesn't happen at 0 it happen when CVR reloaded with new value.So for Nth cycle excpetion we should store N-1 count value.  
-5)If systick exception required for every 100th pulses reload to 99.
+## ⏱️ SysTick Reload Value Register
+
+1) SysTick is a **down counter**. The reload value register specifies the initial value loaded into the **SYST_CVR** register.  
+2) When SysTick is enabled, the reload value is copied into **CVR**.  
+3) Once CVR reaches zero, it is automatically **reloaded** with the value from the reload register.  
+4) The exception does **not** occur at zero — it occurs **when CVR reloads**.  
+   Hence, for an exception every *N* cycles, store **N − 1**.  
+5) Example: For a SysTick exception every **100 pulses**, load **99**.
 
 ---
 
-## Systick control and status register
-1)Bit 0 when set it will enable the counter.  
-2)Bit 1 handles systick exception request.  
-3)Bit 2 intiates the clock source.
+## ⚙️ SysTick Control and Status Register
 
+1) **Bit 0** enables the counter.  
+2) **Bit 1** enables the SysTick exception request.  
+3) **Bit 2** selects the clock source.
