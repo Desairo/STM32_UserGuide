@@ -52,6 +52,12 @@ Understand the startup file, reset handler, and low-level MCU initialization.
 ⏰ [Lesson 12: Clocks](lesson12_Clocks/README.md)  
 Learn about microcontroller clocks — HSI, HSE, PLL, system clock, peripheral clocks, and RCC management.
 
+🔌 [Lesson 13: SPI](lesson13_SPI/README.md)  
+Learn about SPI (Serial Peripheral Interface) communication — master/slave architecture, data transmission, and SPI peripheral configuration using STM32 HAL.
+
+🔗 [Lesson 14: I2C](lesson14_I2C/README.md)  
+Learn about I2C (Inter-Integrated Circuit) communication — SDA/SCL lines, device addressing, pull-up resistors, and I2C peripheral configuration using STM32 HAL.
+
 ---
 
 ## 🤝 Contributing
